@@ -1,16 +1,17 @@
 1、什么情况下WIN32编程的时候字符串前要加大写的L？
-答：
+答：大概编码形式不一样需要转化宽字符的时候，，，
 
 
 
 
 2、修改GameCore的代码，使其背景色为红色
-
+答：哈哈难道不是 wndClass.hbrBackground=(HBRUSH)GetStockObject(RED_BRUSH);谁知道有没有RED_BRUSH，，，
 
 
 
 3、修改FirstProject的代码，使对话框显示的标题为“警告”，对话框内容为“文件尚未保存确认要退出吗？”，对话框拥有"OK"和“CANCEL”两个按钮，OK按下则退出程序，CANCEL按下无仍和反应。。。（这段代码以后要加到窗口中的，处理用户退出事件！）
-
+答：哦漏这个我忘了QAQ
+MessageBox(NULL,L"文档尚未保存确认要退出吗？",L"警告",MB_OKCANCEL|MB_ICONWARNING);
 
 
 4、以后交作业、我要直接运行里面的Release版本，你现在只需要保证开发环境下release版本能直接运行就可以。测试方法就是build完release版本以后，直接去对应文件夹双击exe运行查看效果。
